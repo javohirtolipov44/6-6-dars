@@ -9,7 +9,7 @@ const AppDataSource = new DataSource({
   username: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_DATABASE,
-  synchronize: true, // Ishlab chiqarishda false qilish tavsiya etiladi
+  synchronize: true,
   logging: false,
   entities: [User, Post],
 });
