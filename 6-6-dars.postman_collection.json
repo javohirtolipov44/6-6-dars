@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "2997adef-d00a-463f-bc3c-66ddd4964ec8",
+		"name": "6-6-dars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14374179"
+	},
+	"item": [
+		{
+			"name": "add_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Alishasder\",\r\n  \"lastName\": \"Navoasdiy\",\r\n  \"email\": \"alisheasaaasdasdasaddasdrq@example.com\",\r\n  \"age\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/user"
+			},
+			"response": []
+		},
+		{
+			"name": "all_users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "one_user_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/users/21"
+			},
+			"response": []
+		},
+		{
+			"name": "update_user_by_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"gayrat\",\r\n  \"lastName\": \"salimov\",\r\n  \"age\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/users/21"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/api/users/20"
+			},
+			"response": []
+		},
+		{
+			"name": "add_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"TypeORM haqida\",\r\n  \"content\": \"TypeORM - bu zamonaviy ORM...\",\r\n  \"userId\": 14\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "all_posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "one_post_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/posts/2"
+			},
+			"response": []
+		},
+		{
+			"name": "update_post_by_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"TypeORM haqida yangilangan\",\r\n  \"content\": \"TypeORM - bu zamonaviy ORM frameworki...\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/posts/3"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/api/posts/2"
+			},
+			"response": []
+		}
+	]
+}
